@@ -1,0 +1,28 @@
+footer {
+  background-color: rgba(164, 164, 27, 0.872); /* Background color with transparency */
+  color: white; /* Text color */
+  padding: 20px; /* Default padding */
+  text-align: center; /* Center-align text */
+}
+
+footer p {
+  margin: 0; /* Remove default margin for paragraphs */
+  font-size: 16px; /* Default font size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+footer{
+  margin-top: 100%;
+}
+  footer p {
+    font-size: 14px; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  footer p {
+    font-size: 12px; /* Make font smaller for small screens */
+  }
+}

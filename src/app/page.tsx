@@ -1,4 +1,5 @@
 
+import About from "@/components/about";
 import Hero from "@/components/hero";
 
 
@@ -8,6 +9,11 @@ export default function Home() {
     <div>
       
       <Hero/>
+      <br/>
+      <br/>
+      <br/>
+      <About/>
+      <br/>
       
       
     </div>

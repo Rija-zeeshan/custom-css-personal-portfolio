@@ -6,7 +6,7 @@ export default function Education() {
     <main className='education'>
       <div className='edu-text'>
         <h1>Education</h1>
-        <p></p>
+       
       </div>
       <div className='box-con'>
         <div>

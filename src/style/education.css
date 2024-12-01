@@ -1,6 +1,6 @@
-.education{
+.education {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,40 +8,122 @@
     flex-direction: column;
     margin-bottom: 50px;
 }
-.edu-text{
+
+/* Add gap between education section and paragraph */
+.education  .paragraph {
+    margin-top: 30px; /* Gap between education section and paragraph */
+}
+
+/* Optional: Increase gap if needed */
+.paragraph {
+    margin-top: 30px; /* Extra gap to avoid sections from sticking together */
+    padding: 0 15px; /* Adding horizontal padding for mobile view */
+}
+
+.edu-text {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-color: rgba(164, 164, 27, 0.872);
+    color: rgba(164, 164, 27, 0.872);
+    text-align: center; /* Center align the text */
 }
-.box-con{
- width: 80%;
- background-color: white;
- display: flex;
-justify-content: space-between;
-margin-top: 20px;
-margin-bottom: 20px;
-padding: 20px;
+
+/* Box container styling */
+.box-con {
+    width: 80%;
+    background-color: rgb(244, 242, 242);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Adding border-radius for better visuals */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for depth */
 }
-.uni-name{
+
+.uni-name {
     font-size: 25px;
-    
+    font-weight: bold;
 }
-.commerce{
+
+/* Commerce section */
+.commerce {
     width: 50%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-@media screen and (min-width:0px) and (max-width:750px) {
-    .box-con{
-        flex-direction: column;
-        
+
+/* Responsive Design for Medium Screens (Tablets) */
+@media screen and (max-width: 1024px) {
+    .edu-text {
+        width: 100%; /* Increase width for medium screens */
     }
-    .commerce{
-        width: 100%;
+
+    .box-con {
+        padding: 15px; /* Adjust padding */
     }
-    .edu-text{
-        width: 90%;
+
+    .commerce {
+        width: 100%; /* Full width for commerce section */
+        margin-top: 10px; /* Add some spacing */
+    }
+}
+
+/* Responsive Design for Small Screens (Mobile devices) */
+@media screen and (max-width: 750px) {
+    .education {
+        margin-top: 200px; /* Reduce top margin */
+    }
+
+    .edu-text {
+        width: 90%; /* Full width with padding for small screens */
+    }
+
+    .box-con {
+        flex-direction: column; /* Stack boxes vertically */
+        width: 100%; /* Ensure box-con fills the width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .commerce {
+        width: 100%; /* Full width for commerce section */
+        margin-top: 10px; /* Add some spacing */
+    }
+
+    .uni-name {
+        font-size: 22px; /* Adjust font size */
+    }
+
+    /* Optional: Adjust font size for small screens */
+    .edu-text {
+        font-size: 14px; /* Slightly smaller text */
+    }
+}
+
+/* Extra small screen adjustments (Mobile Portrait) */
+@media screen and (max-width: 480px) {
+    .edu-text {
+        width: 100%; /* Full width for mobile screens */
+        padding: 10px; /* Padding for text spacing */
+    }
+
+    .box-con {
+        padding: 8px; /* Further reduced padding on very small screens */
+    }
+
+    .uni-name {
+        font-size: 20px; /* Even smaller font size */
+    }
+
+    .edu-text {
+        font-size: 13px; /* Adjusted font size for better readability */
+    }
+
+    /* Optional: Extra gap on very small screens */
+    .education + .paragraph {
+        margin-top: 40px; /* Increase gap between sections */
     }
 }
